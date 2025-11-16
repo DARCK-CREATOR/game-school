@@ -125,4 +125,13 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
+# Autorise Railway
+CSRF_TRUSTED_ORIGINS = [
+    'https://game-school-production.up.railway.app',
+    'https://*.railway.app'
+]
+
+# Si tu veux désactiver temporairement (déconseillé)
+# CSRF_COOKIE_SECURE = False
+# SESSION_COOKIE_SECURE = False
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
